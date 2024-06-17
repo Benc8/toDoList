@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="main.css">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu Mono' rel='stylesheet'>
+    <link rel="shortcut icon" href="" type="image/x-icon">
 </head>
 <body>
+    <h1 class="addButton" onclick="addElementGUI();">+</h1>
     <nav>
         <h1 class="mainText">To Do List</h1> <br>
         <div class="center">
             <div><h2 class="indicatorText active">Today</h2></div>
             <div><h2 class="indicatorText">All</h2> </div>
+            <div><h2 class="indicatorText">Done</h2> </div>
         </div>
     </nav>
 
@@ -22,18 +25,19 @@
             <h3>kys</h3>
             <p>-this is the only way</p>
         </div>
-        <div class="toDoItem">
+        <div class="toDoItem important">
+            <h3>kys</h3>
+            <p>-this is the only way</p>
+        </div>
+        <div class="toDoItem unimportant">
             <h3>kys</h3>
             <p>-this is the only way</p>
         </div>
         <div class="toDoItem">
             <h3>kys</h3>
-            <p>-this is the only way</p>
-        </div>
-        <div class="toDoItem">
-            <h3>kys</h3>
-            <p>-this is the only way</p>
+            <p class="extendDots">...</p>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

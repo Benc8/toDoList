@@ -46,26 +46,57 @@ nav{
     }
 }
 
+.addButton{
+    position: fixed;
+    right: 3%;
+    top: 0;
+    font-size: 3em;
+    color: rgb(84, 126, 0);
+    cursor: crosshair;
+}
+
 
 
 .listCardHolder{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .toDoItem{
     border: 5px solid green;
     border-radius: 20px;
-    width: 30vw;
-    margin: 1%;
+    width: 31vw;
+    transform: scale(97%);
+    margin: 0.5%;
+    transition: all 0.3s;
+}
+
+.toDoItem:hover {
+    transform: scale(100%);
 }
 
 h3{
     text-align: center;
 }
+
 p{
     opacity: 0.9;
     font-family: 'Ubuntu Mono';
-    font-weight: 100;
-    text-indent: 1em;
+    font-weight: 150;
+    text-align: center;
+}
+
+.important{
+    border-color: red;
+}
+
+.unimportant{
+    border-color: rgb(85, 105, 112);
+}
+
+
+
+.extendDots{
+    text-indent: 0;
 }
