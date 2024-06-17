@@ -1,0 +1,71 @@
+body{
+    background-color: black;
+    font-family: 'Ubuntu';
+    color: aliceblue;
+}
+
+nav{
+    padding-bottom: 2em;
+}
+
+.mainText{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.indicatorText{
+    font-family: 'Ubuntu Mono';
+    font-weight: 100;
+    text-align: center;
+    margin: auto;
+    opacity: 0.8;
+    display: flex;
+}
+
+.center{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.active{
+    opacity: 1;
+    text-decoration: underline;
+    animation: active 2s;
+}
+
+@keyframes active {
+    from {
+        opacity: 0.8;
+        text-decoration: none;
+    }
+    to {
+        text-decoration: underline;
+        opacity: 1;
+    }
+}
+
+
+
+.listCardHolder{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.toDoItem{
+    border: 5px solid green;
+    border-radius: 20px;
+    width: 30vw;
+    margin: 1%;
+}
+
+h3{
+    text-align: center;
+}
+p{
+    opacity: 0.9;
+    font-family: 'Ubuntu Mono';
+    font-weight: 100;
+    text-indent: 1em;
+}
