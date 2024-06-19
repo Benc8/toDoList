@@ -46,6 +46,8 @@ nav{
     }
 }
 
+
+
 .addButton{
     position: fixed;
     right: 3%;
@@ -53,6 +55,41 @@ nav{
     font-size: 3em;
     color: rgb(84, 126, 0);
     cursor: crosshair;
+}
+
+.addWindow{
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    z-index: 15;
+    width: 90%;
+    height: 90%;
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color: rgba(10, 10, 10, 0.9);
+    display: none;
+}
+
+.Yes, .No{
+    background-color: none;
+    border-radius: 15px;
+    position: fixed;
+    font-weight: bolder;
+    font-family: 'Ubuntu Mono';
+    padding: 1%;
+    cursor: pointer;
+}
+
+.Yes{
+    bottom: 5%;
+    right: 8%;
+    border: 4px solid green;
+}
+
+.No{
+    bottom: 5%;
+    right: 15%;
+    border: 4px solid red;
 }
 
 
@@ -99,4 +136,29 @@ p{
 
 .extendDots{
     text-indent: 0;
+}
+
+
+
+input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid gray;
+    border-radius: 10px;
+    color: aliceblue;
+    font-family: 'Ubuntu';
+    font-size: 1em;
+    padding: 0.5em;
+    margin-left: 10%;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Ubuntu Mono';
+    opacity: 0.8;
+}
+
+input[type="text"]:focus {
+    border-color: aliceblue;
+    outline: none;
+    box-shadow: 0 0 5px aliceblue;
 }
