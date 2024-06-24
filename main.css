@@ -21,6 +21,7 @@ nav{
     margin: auto;
     opacity: 0.8;
     display: flex;
+    cursor: pointer;
 }
 
 .center{
