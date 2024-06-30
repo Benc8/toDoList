@@ -22,22 +22,22 @@
         <div class="center">
             <div><h2 class="indicatorText active">Today</h2></div>
             <div><h2 class="indicatorText">All</h2> </div>
-            <div><h2 class="indicatorText">Done</h2> </div>
+            <div><h2 class="indicatorText">Done &check;</h2> </div>
         </div>
     </nav>
 
     <div class="listCardHolder" id="cardHolder">
         <div class="toDoItem">
             <h3>kys</h3>
-            <p>-this is the only way</p>
+            
         </div>
         <div class="toDoItem important">
             <h3>kys</h3>
-            <p>-this is the only way</p>
+            
         </div>
-        <div class="toDoItem unimportant">
+        <div class="toDoItem unimportant" onclick="addClicked.call(this)" onmouseleave="removeClicked.call(this)">
             <h3>kys</h3>
-            <p>-this is the only way</p>
+            <h6 class="red">X</h6><h6 class="green">&check;</h6>
         </div>
         <div class="toDoItem">
             <h3>kys</h3>

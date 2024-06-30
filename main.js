@@ -24,12 +24,43 @@ function reloadWindow() {
         let div = document.createElement("div");
         let heading = document.createElement("h3");
         let text = document.createTextNode(element);
-
+    
         heading.appendChild(text);
         div.appendChild(heading);
         div.classList.add("toDoItem");
+    
+        // Create and append the <h6> elements
+        let h6Red = document.createElement("h6");
+        h6Red.classList.add("red");
+        h6Red.innerHTML = "X";
+    
+        let h6Green = document.createElement("h6");
+        h6Green.classList.add("green");
+        h6Green.innerHTML = "&check;";
+    
+        div.appendChild(h6Red);
+        div.appendChild(h6Green);
+    
+        // Add onclick event listener
+        div.addEventListener('click', function() {
+            this.classList.add('clicked');
+        });
+    
+        // Add onmouseleave event listener
+        div.addEventListener('mouseleave', function() {
+            this.classList.remove('clicked');
+        });
+    
         cardHolder.appendChild(div);
     });
+}
+
+function addClicked() {
+    this.classList.add('clicked');
+}
+
+function removeClicked(){
+    this.classList.remove("clicked");
 }
 
 function addElement() {
@@ -65,8 +96,11 @@ function handleKeydown(event) {
 
 
 // Initial call to load existing items on page load
-reloadWindow();
+
+//reloadWindow();
+
 document.addEventListener('keydown', handleKeydown);
+reloadWindow();
 
 
 function resetLocalStorage() {

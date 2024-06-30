@@ -36,19 +36,6 @@ nav{
     animation: active 2s;
 }
 
-@keyframes active {
-    from {
-        opacity: 0.8;
-        text-decoration: none;
-    }
-    to {
-        text-decoration: underline;
-        opacity: 1;
-    }
-}
-
-
-
 .addButton{
     position: fixed;
     right: 3%;
@@ -118,7 +105,27 @@ h3{
     text-align: center;
 }
 
-p{
+h6{
+    text-align: center;
+    width: 50%;
+    font-size: 2em;
+    margin: 0;
+    padding-bottom: 0.6em;
+    cursor: pointer;
+}
+
+
+
+div h6{
+    display: none;
+}
+
+div.clicked h6{
+    display: inline-block;
+    animation: spanIn 0.5s;
+}
+
+li,.extendDots{
     opacity: 0.9;
     font-family: 'Ubuntu Mono';
     font-weight: 150;
@@ -133,7 +140,13 @@ p{
     border-color: rgb(85, 105, 112);
 }
 
+.red{
+    color: red;
+}
 
+.green{
+    color: green;
+}
 
 .extendDots{
     text-indent: 0;
@@ -162,4 +175,27 @@ input[type="text"]:focus {
     border-color: aliceblue;
     outline: none;
     box-shadow: 0 0 5px aliceblue;
+}
+
+
+@keyframes active {
+    from {
+        opacity: 0.8;
+        text-decoration: none;
+    }
+    to {
+        text-decoration: underline;
+        opacity: 1;
+    }
+}
+
+@keyframes spanIn {
+    from {
+        opacity: 0.2;
+        transform: scale(90%);
+    }
+    to {
+        opacity: 1;
+        transform: scale(100%);
+    }
 }
